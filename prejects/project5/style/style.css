@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&display=swap');
+body{
+    background-color: #E5EEFF;
+    font-family: assistant, sans-serif;
+    margin: 0;
+}
+div>div{
+    width: 250px;
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+    direction: rtl;
+}
+h1{
+    font-family: assistant, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #0EE1DA;
+    margin: 0;
+}
+.grid{
+    margin-top: 300px;
+    margin-bottom: 300px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+     'c b a a'
+     'd e a a'
+     'f g h i'
+     'j j k l'
+     'j j m n'
+     'j j o p'
+    ;
+    gap: 10px;
+}
+.pic1{
+    grid-area: c;
+    background-image: url(../images/Rectangle\ 506-1.png);
+}
+.pic2{
+    grid-area: b;
+    background-image: url(../images/Rectangle\ 506-2.png);
+}
+.pic3{
+    grid-area: a;
+    background-color: #020253;
+    position: relative;
+}
+.find{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 400px;
+    top: 180px;
+    text-align: center;
+}
+p{
+   color: #F9F9F9; 
+   font-size: 20px;
+}
+#pic3{
+    width: 515px;
+    height: 520px;
+}
+.pic4{
+    grid-area: d;
+    background-image: url(../images/Rectangle\ 506-3.png);
+}
+.pic5{
+    grid-area: e;
+    background-image: url(../images/Rectangle\ 506-4.png);
+}
+.pic6{
+    grid-area: f;
+    background-image: url(../images/Rectangle\ 506-5.png);
+}
+.pic7{
+    grid-area: g;
+    background-image: url(../images/Rectangle\ 506-6.png);
+}
+.pic8{
+    grid-area: h;
+    background-image: url(../images/Rectangle\ 506-7.png);
+}
+.pic9{
+    grid-area: i;
+    background-image: url(../images/Rectangle\ 506-8.png);
+}
+.pic10{
+    grid-area: j;
+   background-color: #8E097C;
+}
+#pic10{
+    width: 514px;
+    height: 772px;
+    position: relative;
+}
+.pic11{
+    grid-area: k;
+    background-image: url(../images/Rectangle\ 506.png);
+}
+.pic12{
+    grid-area: l;
+    background-image: url(../images/Rectangle\ 513.png);
+}
+.pic13{
+    grid-area: m;
+    background-image: url(../images/Rectangle\ 514.png);
+}
+.pic14{
+    grid-area: n;
+    background-image: url(../images/Rectangle\ 515.png);
+}
+.pic15{
+    grid-area: o;
+    background-image: url(../images/Rectangle\ 516.png);
+}
+.pic16{
+    grid-area: p;
+    background-image: url(../images/Rectangle\ 506-9.png);
+}
+form{
+    position: absolute;
+    text-align: center;
+    margin: 50px;
+    top: 50px;
+}
+h2{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+form p{
+    color: #F9F9F9;
+    padding-bottom: 50px;
+}
+label{
+    font-family: heebo, sans-serif;
+    color: #0EE1DA;
+    position: absolute;
+    right: 0;
+}
+input{
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+#hava{
+    height: 150px;
+}
+button{
+    width: 100%;
+    height: 50px;
+    background-color: #0EE1DA;
+    color: #011560;
+    font-family: heebo, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+@media screen and (max-width:1200px){
+
+    .grid{
+        grid-template-areas: 
+        'a a'
+        'a a'
+        'c b'
+        'd e'
+        'f g'
+        'h i'
+        'j j'
+        'j j'
+        'j j'
+        'l m'
+        'n o'
+        'p k';
+        margin: 0;
+
+    }
+}
+@media screen and (max-width:550px) {
+    .grid{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h1{
+        font-size: 36px;
+        top: 50px;
+    }
+    p{
+        font-size: 20px;
+    }
+    #pic3{
+        width: 100%;
+        height: 350px;
+    }
+    .find{
+        top: 120px;
+        width: 100%;
+    }
+    div>div{
+        width: 165px;
+        height: 165px;
+    }
+    #pic10{
+        margin: 0 10px;
+    }
+    #form{
+        margin: 25px !important;
+    }
+    #form p{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    input{
+        height: 33px;
+    }
+    #hava{
+        height: 95px;
+    }
+    button{
+        font-size: 15px;
+    }
+    label{
+        font-size: 8px;
+    }
+    #pic10{
+        height: 650px;
+    }
+}

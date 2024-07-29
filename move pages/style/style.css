@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    font-family: heebo, sans-serif;
+}
+a{
+    font-size: 40px;
+    padding: 15px;
+    text-decoration: none;
+    color: #2C2C2C;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px 20px;
+}
+a:hover{
+    color: #1AE0EC;
+}
+#rashi{
+    color: #1AE0EC;
+}
+header{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 9;
+}
+.picname{
+    position: absolute;
+    left: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.pic{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-image: url(/images/mypic.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+}
+.name{
+    left: 60px;
+    top: 35px;
+    width: 150px;
+    position: absolute;
+    font-family: Satisfy, sans-serif;
+    font-size: 30px;
+}
+a .name:hover{
+    color: #2C2C2C !important;
+}
+.heroSection{
+    text-align: center;
+    background-image: url(/images/header-background.png);
+    padding: 150px 0;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    top: 100px;
+}
+.heroSection h1{
+    font-weight: 900;
+    font-size: 80px;
+    margin: 10px;
+    position: relative;
+
+}
+.heroSection p{
+    font-size: 25px;
+    position: relative;
+}
+.hero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #13E8F163;
+    opacity: 1;
+}
+.shadow{
+    width: 100%;
+    height: 230px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    text-align: center;
+    padding-top: 100px;
+}
+.shadow div:hover{
+    transform: scale(1.2);
+}
+.shadow div{
+    width: 100px;
+    height: 100px;
+    margin: 15px 20px;
+    display: inline-block;
+}
+.sign1{
+    background-image: url(/images/img-HTML.png);  
+}
+.sign2{
+    background-image: url(/images/img-CSS.png);
+}
+.sign3{
+    background-image: url(/images/img-Bootstrap.png);
+}
+.sign4{
+    background-image: url(/images/img-SASS.png);    
+}
+.project{
+    right: 50%;
+    transform: translate(50%);
+    margin-top: 100px;
+    position: absolute;
+    width: 1200px;
+    height: 750px;
+
+    background-position: center center;
+    background-size: cover;
+}
+.contact5{
+    width: 100%;
+    height: 52px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 30px;
+    position: fixed;
+}
+.contact5 h3{
+    color: #1AE0EC;
+    font-size: 25px;
+}
+.contact5 p{
+    font-size: 25px;
+    float: left;
+    color: #1AE0EC;
+    margin: -35px;
+    margin-left: 15px;
+    font-family: satisfy, sans-serif;
+}
+.bt{
+    position: absolute;
+    display: flex;
+    right: 50%;
+    transform: translate(50%);
+}
+.bt a{
+    background-color: #1AE0EC;
+    border-radius: 45px;
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+}
+.bt a:hover{
+    color: white;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    header{
+        width: 100%;
+        height: 70px;
+    }
+    .name{
+        display: block;
+        left: -220px;
+        top: 20px;
+        font-size: 25px;
+    }
+    .pic{
+        position: absolute;
+        top: 15px;
+        width: 45px;
+        height: 45px;
+        left: 90px;
+    }
+    .heroSection{
+        width: 100%;
+        height: 300px;
+        top: 70px;
+        padding: 0 0;
+    }
+    .heroSection h1{
+        width: 250px;
+        position: absolute;
+        top: 25px;
+        right: 50%;
+        transform: translate(50%);
+        font-size: 25px;
+        margin: 0;
+    }
+    .heroSection p{
+        font-size: 15px;
+        width: 80%;
+        right: 50%;
+        transform: translate(50%);
+        top: 90px;
+    }
+    .shadow{
+        height: 70px;
+        margin: 0px 0;
+        padding: 0;
+        top: 300px;
+        position:absolute;
+    }
+    .shadow div{
+        margin: 0;
+        width: 60px;
+        height: 60px;
+        background-position: center center;
+        background-size: cover;
+    }
+    .contact5{
+        height: 50px;
+        background-color: black;
+        position: absolute;
+        bottom: 5px;
+        padding: 0px 30px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+    }
+    .contact5 h3{
+        color: #1AE0EC;
+        font-size: 15px;
+    }
+    .contact5 p{
+        font-size: 15px;
+        color: #1AE0EC;
+        margin: 0 110px;
+        font-family: satisfy, sans-serif;
+    }
+    .project{
+        width: 75%;
+        height: 180px;
+        top: 300px;
+    }
+    .bt{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 50%;
+        transform: translate(50%);
+        top: 200px;
+    }
+    .bt a{
+        background-color: #1AE0EC;
+        border-radius: 45px;
+        width: 120px;
+        height: 30px;
+        padding: 8px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .bt a:hover{
+        color: white;
+    }
+}

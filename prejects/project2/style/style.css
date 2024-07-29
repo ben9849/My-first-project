@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap');
+body{
+    margin: 0;
+    text-align: center;
+    direction: rtl;
+}
+.body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#281EFF, #2DFF8C);
+    background: -webkit-linear-gradient(#281EFF, #2DFF8C);
+    background: -moz-linear-gradient(#281EFF, #2DFF8C);
+    background: -o-linear-gradient(#281EFF, #2DFF8C);
+    position: relative;
+    padding-bottom: 5px;
+}
+.mmm{
+    text-align: center;
+    margin-top: 30vh;
+    right: 50%;
+    transform: translateX(50%);
+    position: absolute;
+    color: #FFFFFF;
+}
+h1{
+    font-family:satisfy, sans-serif;
+    font-size: 180px;
+    margin: 0;
+}
+h2{
+    font-family:varela round, sans-serif;
+    font-size: 36px;
+}
+p{
+    font-family:varela round, sans-serif; 
+    font-size: 22px;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 25px;
+}
+.fle{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+label{
+    float: right;
+}
+input{
+    width: 410px;
+    height: 50px;
+    background-color: #F6F6F624;
+    border: 2px solid #FFFFFF;
+}
+input[type=submit]{
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    opacity: 1;
+    background-color:#FFFFFF;
+    color:#1C1C1C;
+}
+
+@media screen and (max-width:1300px) {
+    .mmm{
+        width: 80%;
+    }
+    .form{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1000px) {
+    h1{
+        font-size: 150px;
+    }
+}
+@media screen and (max-width:900px) {
+    h1{
+        font-size: 100px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .fle{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:520px) {
+    .mmm{
+        margin-top: 20vh;
+    }
+    h1{
+        font-size: 53px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
+    input{
+        width: 250px;
+        height: 30px;
+    }
+}

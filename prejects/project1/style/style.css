@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+body{
+    margin: 0;
+    direction: rtl;
+    font-family: heebo, sans-serif;
+}
+.main{
+    background-image: url(../images/Path\ 15@2x.png);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+.contact{
+    width: 560px;
+    height: 650px;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 150px;
+    right: 200px;
+    padding: 80px;
+    color: white;
+}
+h1{
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+}
+p{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+label{
+    font-weight: bold;
+    font-size: 22px;
+}
+input.in{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #D31C75;
+}
+input[type=submit]{
+    width: 200px;
+    height: 70px;
+    background-color: #D31C75;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: heebo, sans-serif;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .contact{
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+@media screen and (max-width: 800px){
+    .contact{
+        width: 60%;
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 500px) {
+    .contact{
+        padding: 20px;
+        height: 900px;
+    }
+    p h1 form{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 370px) {
+    .main{
+        height: 220px;
+    }
+    .contact{
+        top: 80px;
+        width: 70%;
+        height: 450px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    p{
+        font-size: 15px;
+    }
+    label{
+        font-size: 14px;
+    }
+    input.in{
+        width: 100%;
+        height: 30px;
+    }
+    input[type=submit]{
+        width: 76px;
+        height: 33px;
+        font-size: 15px;
+    }
+}    
