@@ -20,6 +20,9 @@ a{
 }
 a:hover{
     transform: scale(1.2); 
+    -moz-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    -ms-transform: scale(1.2);
     color: #1AE0EC;
 }
 #rashi{
@@ -112,6 +115,9 @@ input[type="checkbox"]{
 }
 .shadow div:hover{
     transform: scale(1.2);
+    -moz-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    -ms-transform: scale(1.2);
 }
 .shadow div{
     width: 100px;
@@ -167,6 +173,9 @@ input[type="checkbox"]{
 .about3:hover{
     cursor: pointer;
     transform: scale(1.2);
+    -moz-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    -ms-transform: scale(1.2);
     .button{
         color: white;
         cursor: pointer;
@@ -290,7 +299,13 @@ input[type="checkbox"]{
 .prd:hover{
     box-shadow: 7px 7px 10px;
     transform: scale(1.1);
+    -moz-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    -ms-transform: scale(1.1);
     transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
 }
 .prj1{
     background-image: url(../images/project1.png); 
@@ -438,6 +453,9 @@ button .button1{
 }
 .flex div:hover{
     transform: scale(1.1);
+    -moz-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    -ms-transform: scale(1.1);
     color: #2C2C2C;
 }
 .contact5{
