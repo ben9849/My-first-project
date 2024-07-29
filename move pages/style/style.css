@@ -107,16 +107,16 @@ a .name:hover{
     display: inline-block;
 }
 .sign1{
-    background-image: url(/images/img-HTML.png);  
+    background-image: url(.../images/img-HTML.png);  
 }
 .sign2{
-    background-image: url(/images/img-CSS.png);
+    background-image: url(.../images/img-CSS.png);
 }
 .sign3{
-    background-image: url(/images/img-Bootstrap.png);
+    background-image: url(.../images/img-Bootstrap.png);
 }
 .sign4{
-    background-image: url(/images/img-SASS.png);    
+    background-image: url(.../images/img-SASS.png);    
 }
 .project{
     right: 50%;
